@@ -16,6 +16,12 @@ class Training:
         self.model = tf.keras.models.load_model(
             self.config.updated_base_model_path
         )
+        # Recompile the model to ensure compatibility with current TensorFlow version
+        self.model.compile(
+            optimizer=tf.keras.optimizers.Adam(learning_rate=0.001),
+            loss=tf.keras.losses.CategoricalCrossentropy(),
+            metrics=["accuracy"]
+        )
 
     def train_valid_generator(self):
 
