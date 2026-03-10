@@ -20,7 +20,7 @@
 Clone the repository
 
 ```bash
-https://github.com/abhijitvidhate/Kidney-Disease-Classification-Deep-Learning-Project
+https://github.com/abhijitvidhate/Assignment-1
 ```
 ### STEP 01 - Set up Python environment
 
@@ -114,3 +114,4 @@ DVC
  - Its very lite weight for POC only
  - lite weight expriements tracker
  - It can perform Orchestration (Creating Pipelines)
+
